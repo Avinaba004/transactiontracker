@@ -1,0 +1,28 @@
+/* src/index.css */
+
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Blue focus state */
+}

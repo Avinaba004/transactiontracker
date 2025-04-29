@@ -1,0 +1,62 @@
+/* src/App.css */
+
+/* Full-page gradient */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #E0EAFC 0%, #CFDEF3 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo image */
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem; /* Space between logo and title */
+}
+
+/* Title */
+.app-header h1 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Main content area grows to fill */
+.app-main {
+  flex: 1;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Footer */
+.app-footer {
+  background: #4f46e5;
+  color: #fafafa;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.875rem;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}

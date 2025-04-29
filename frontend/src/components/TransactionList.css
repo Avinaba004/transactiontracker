@@ -1,0 +1,87 @@
+/* Container to allow horizontal scroll and shadow */
+.table-container {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  /* The table itself */
+  .transaction-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Header styling with gradient */
+  .transaction-table thead {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: #fff;
+  }
+  
+  .transaction-table th {
+    padding: 12px 16px;
+    font-weight: 600;
+    text-align: left;
+    position: relative;
+  }
+  
+  .transaction-table th:first-child {
+    border-top-left-radius: 8px;
+  }
+  
+  .transaction-table th:last-child {
+    border-top-right-radius: 8px;
+  }
+  
+  /* Zebra striping + hover */
+  .transaction-table tbody tr:nth-child(even) {
+    background-color: #f3f4f6;
+  }
+  
+  .transaction-table tbody tr:hover {
+    background-color: #e2e8f0;
+  }
+  
+  /* Cell styling */
+  .transaction-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+  }
+  
+  /* Emphasize amount */
+  .transaction-table td.amount {
+    font-weight: 600;
+    color: #4f46e5;
+  }
+  
+  /* Action button styles */
+  .action-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Delete button variant */
+  .action-button.delete {
+    background-color: #e53e3e;
+    color: #fff;
+  }
+  
+  .action-button.delete:hover {
+    background-color: #c53030;
+  }
+  
+  /* No-data message */
+  .no-data {
+    font-style: italic;
+    color: #6b7280;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
